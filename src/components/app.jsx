@@ -11,15 +11,16 @@ class App extends Component {
 
     this.state = {
       gifs: [{ id: "5sUyKBXg1BURy" }, { id: "DIznMs6yf7p6M" }],
-      selectedGifId: "5sUyKBXg1BURy"
+      selectedGifId: ""
     };
   }
+
   handleClick = id => {
     this.setState({ selectedGifId: id });
   };
 
   searchGifs = query => {
-    giphy("API-KEY").search(
+    giphy("cgYyy5GZMr2YIRq9pa0Vbr0LMkvwXcAL").search(
       {
         q: query,
         rating: "g",
